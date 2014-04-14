@@ -6,12 +6,12 @@ public class IO{
 
     public static void reset(String filename){
         try{
-        if (reader != null){
-            try{
-            reader.close();
-            }catch(Exception e){   // in case multiple close on the same reader         }
-            }
-        }
+//        if (reader != null){
+//            try{
+//            reader.close();
+//            }catch(Exception e){   // in case multiple close on the same reader         }
+//            }
+//        }
         reader = new BufferedReader(new FileReader(filename));
         }catch(Exception e){
             e.printStackTrace();
@@ -23,8 +23,12 @@ public class IO{
         String line = reader.readLine();
         if (line == null)
             return null;
-        else
-            return line.split("\\t");
+        else{
+                String[] rest = line.split("\\t");
+
+            return rest;
+            }
+
         }catch(Exception e){
             e.printStackTrace();
             return null;

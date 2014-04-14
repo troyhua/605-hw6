@@ -1,0 +1,13 @@
+nodedef>name VARCHAR,label VARCHAR,width DOUBLE
+Machine_learning,'Machine_learning',10.760843707276871
+Stochastic_optimization,'Stochastic_optimization',7.0122815116223025
+Bayesian_network,'Bayesian_network',7.0133803891962465
+Partial_least_squares_regression,'Partial_least_squares_regression',7.0122815116223025
+Decision_stump,'Decision_stump',7.020743389708006
+Michael_L._Littman,'Michael_L._Littman',7.0122815116223025
+edgedef>node1 VARCHAR,node2 VARCHAR
+Machine_learning,Stochastic_optimization
+Machine_learning,Bayesian_network
+Machine_learning,Partial_least_squares_regression
+Machine_learning,Decision_stump
+Machine_learning,Michael_L._Littman
